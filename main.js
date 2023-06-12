@@ -2,7 +2,7 @@ let app = angular.module("myApp", []);
 app.controller('myCtr', function ($scope) {
     $scope.tasks = [
         { name: "Practice at Leetcode", isEditing: false },
-        { name: "Practice at Codechef", isEditing: false },
+        { name: "Practice at Codeforces", isEditing: false },
         { name: "Do some Development", isEditing: false }
     ];
 
@@ -16,14 +16,14 @@ app.controller('myCtr', function ($scope) {
         $scope.tasks.splice(index, 1);
     };
 
-    $scope.toggleEdit = (task) => {
+    $scope.Edit = (task) => {
        
         if (task.isEditing) {
           if (task.editedName.trim() !== '') {
             task.name = task.editedName;
           }
         } else {
-          task.editedName = task.name; // Set initial value of editedName
+          task.editedName = task.name; 
         }
          console.log(task.isEditing);
         task.isEditing = !task.isEditing;

@@ -35,23 +35,21 @@
                     <h4 class="text-primary mt-4">Tasks:</h4>
                     <div  style="overflow-y:auto; height:350px;">
                         <!-- <div class="m-3 bg-danger"> -->
-                            <div class="p-2 shadow border" ng-repeat="name in tasks">
+                            <div class="p-2 shadow border" ng-repeat="task in tasks">
                                 <div class="input-group row ps-3 ">
                                     <div class="card col-md-10 border-0">
                                         <ul class="lead">
                                             <li style="list-style-type:none">
-                                                <span ng-hide="name.isEditing">{{ name.name }}</span>
-                                                <input ng-show="name.isEditing" ng-model="name.editedName" type="text" class="form-control" ng-readonly="!name.isEditing" ng-focus="name.isEditing">
+                                                <span ng-hide="task.isEditing">{{ task.name }}</span>
+                                                <input ng-show="task.isEditing" ng-model="task.editedName" type="text" class="form-control" ng-readonly="!task.isEditing" ng-focus="task.isEditing">
                                             </li>
                                         </ul>
                                     </div>
-                                    <button class="btn btn-outline-primary col mr-2" ng-click="toggleEdit(name)">{{ name.isEditing ? 'S' : 'E' }}</button>
-                                    <div ng-click="remove(name)" class="btn btn-outline-danger col">D</div>
+                                    <button class="btn btn-outline-primary col mr-2" ng-click="Edit(task)">{{ name.isEditing ? 'S' : 'E' }}</button>
+                                    <div ng-click="remove(task)" class="btn btn-outline-danger col">D</div>
                                 </div>
                                 
-                                <!-- <div class="input-group row ps-3" ng-show="task.isEditing">
-                                    <input ng-model="task.editedName" type="text" class="form-control" ng-readonly="!task.isEditing" ng-focus="task.isEditing">
-                                </div> -->
+                             
                                 
                             </div>
                         <!-- </div> -->
