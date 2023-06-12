@@ -19,6 +19,7 @@ app.controller('myCtr', function ($scope) {
     $scope.Edit = (task) => {
        
         if (task.isEditing) {
+            
           if (task.editedName.trim() !== '') {
             task.name = task.editedName;
           }
