@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.main{
+    background-color:rgb(225, 216, 216);
+    border:2px solid black;
+    height:80vh;
+    width:40%;
+    border-radius:0.5rem;
+    text-align:center;
+   margin-top:5rem;
+   margin-left:30%;
+}
+.first{
+    border:2px solid black;
+    height:30%;
+    margin-top:1rem;
+}
+.todo{
+    height:3rem;
+    width:90%;
+    background-color:yellow;
+}
+.search{
+    margin-top:2rem;
+    width:100%;
+    padding-left:5rem;
+    width:100%;
+    height:2rem;
+  text-align:center;
+  background-color:pink;
+  display:flex;
+
+  
+
+}
+.input{
+    
+  margin-left:-3rem;
+  width:80%;
+  border:2px solid black;
+  border-radius:0.2rem;
+    
+
+}
+.add{
+    border:2px solid black;
+    width:rem;
+    height:1.70rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    cursor:pointer;
+}
+.task{
+    color:red;
+    font-size:2rem;
+}
+.list{
+    padding-left:5rem;
+    padding-right:3rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    text-align:center;
+    border:2px solid black;
+    font-size:1.25rem;
+    width:80%;
+    margin-left:2rem; 
+    list-style-type: none;
+    margin-top:1rem;
+
+
+
+}
+/* .second{
+    background-color:red;
+} */
+.remove{
+    float: right;
+    /* padding: 5px; */
+    background: #fff;
+    width: 2rem;;
+    text-align: center;
+    /* border-radius: 20px; */
+    border:2px solid black;
+    color: crimson;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top:-2px;
+  }
+
